@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: your-dockerhub-username/PCDataBase:latest
+    restart: unless-stopped
+    env_file:
+      - PCDataBase-env
+    ports:
+      - "3000:3000"
